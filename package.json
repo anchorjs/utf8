@@ -1,0 +1,22 @@
+{
+  "name": "utf8",
+  "version": "0.0.0",
+  "description": "UTF-8 module for Anchor.js.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/utf8.git"
+  },
+  "bugs": {
+    "url": "http://github.com/anchorjs/utf8/issues"
+  },
+  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "utf8",
+  "volo": {
+    "dependencies": {
+    }
+  }
+}
