@@ -1,6 +1,28 @@
+/**
+ * Module definition.
+ *
+ * Credits:
+ *
+ * This code is based on code originally published to Webtoolkit.info <http://www.webtoolkit.info/>,
+ * as available here:
+ *   http://www.webtoolkit.info/javascript-utf8.html
+ *   http://www.webtoolkit.info/djs/webtoolkit.utf8.js
+ * 
+ * Other implementations known derive from (or include verbatim) this lineage
+ * include:
+ *   https://github.com/ForbesLindesay/utf8-encode
+ *   https://github.com/ForbesLindesay/utf8-decode
+ */
 define(['exports'],
 function(exports) {
 
+  /**
+   * Creates a UTF-8 encoded string from a JavaScript string.
+   *
+   * @param {String} input
+   * @return {String}
+   * @api public
+   */
   function encode(input) {
     var output = '';
     
@@ -24,6 +46,13 @@ function(exports) {
     return output;
   }
 
+  /**
+   * Decodes a string which has been encoded using UTF-8 encoding.
+   *
+   * @param {String} input
+   * @return {String}
+   * @api public
+   */
   function decode(input) {
     var output = '';
     var i = 0;
@@ -53,6 +82,9 @@ function(exports) {
     return output;
   }
 
+  /**
+   * Expose functions.
+   */
   exports.encode = encode;
   exports.decode = decode;
 });
