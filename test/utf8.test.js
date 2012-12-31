@@ -1,10 +1,11 @@
-define(['utf8',
-        'chai'],
-function(utf8, chai) {
-  var expect = chai.expect;
+define(['utf8'],
+function(utf8) {
 
-  // http://www.packetizer.com/labs/cs/characters.html
+  // The following character maps and conversion utilities are useful when
+  // verifying the correctess of character encodings.
+  //
   // http://dev.networkerror.org/utf8/
+  // http://www.packetizer.com/labs/cs/characters.html
   
   describe("utf8", function() {
 
@@ -33,7 +34,7 @@ function(utf8, chai) {
     });
   });
   
-  describe("two byte conversion", function() {
+  describe("two byte character", function() {
     it('should encode', function() {
       var enc = utf8.encode("¢");
       expect(enc).to.equal('\xC2\xA2');
@@ -46,7 +47,7 @@ function(utf8, chai) {
     });
   });
   
-  describe("two byte, two byte, one byte conversion ", function() {
+  describe("two two byte characters followed by a one byte character", function() {
     it('should encode', function() {
       var enc = utf8.encode("Да!");
       expect(enc).to.equal('\xD0\x94\xD0\xB0\x21');
@@ -59,7 +60,7 @@ function(utf8, chai) {
     });
   });
   
-  describe("three byte conversion", function() {
+  describe("three byte character", function() {
     it('should encode', function() {
       var enc = utf8.encode("ৄ");
       expect(enc).to.equal('\xE0\xA7\x84');
