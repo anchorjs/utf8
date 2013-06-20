@@ -1,7 +1,7 @@
 {
   "name": "utf8",
   "version": "0.0.1",
-  "description": "UTF-8 module for Anchor.js.",
+  "description": "Utilities for UTF-8 character encoding.",
   "repository": {
     "type": "git",
     "url": "git://github.com/anchorjs/utf8.git"
