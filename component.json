@@ -1,0 +1,11 @@
+{
+  "name": "utf8",
+  "version": "0.0.0",
+  "description": "Utilities for UTF-8 character encoding.",
+  "repo": "anchorjs/utf8",
+  "main": "utf8.js",
+  "scripts": [
+    "utf8.js"
+  ],
+  "license": "MIT"
+}
