@@ -1,0 +1,25 @@
+{
+  "name": "utf8",
+  "version": "0.0.0",
+  "description": "tilities for UTF-8 character encoding.",
+  "authors": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "homepage": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/utf8.git"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "ignore": [
+    ".gitignore",
+    ".jshintrc",
+    "Makefile",
+    "README.md",
+    "component.json",
+    "package.json",
+    "test"
+  ]
+}
